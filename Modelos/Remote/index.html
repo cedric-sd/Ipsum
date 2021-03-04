@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="description" content="landing page generic" />
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./styles.css"/>
+
+  <script src="https://kit.fontawesome.com/7da98c9f53.js" crossorigin="anonymous"></script>
+  
+  <title>Template Landing Page</title>
+</head>
+<body>
+  <header class="header-container">
+    <nav class="nav-header content-padding">
+      <div class="logo">
+        <i class="fas fa-video"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Negócio</a></li>
+        <li><a href="#">Preços</a></li>
+        <li><a href="#">Trabalho</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li class="nav-last-link"><a href="#">Demonstração</a></li>
+      </ul>
+      <button onclick="openMenu()" class="btn-menu-mobile"><i class="fas fa-bars"></i></button>
+    </nav>
+    <div class="nav-links-mobile content-padding hide">
+      <ul>
+        <li><a href="#">Negócio</a></li>
+        <li><a href="#">Preços</a></li>
+        <li><a href="#">Trabalho</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li class="nav-last-link"><a href="#">Demonstração</a></li>
+      </ul>
+    </div>
+    <img class="header-image" src="./assets/form-menu-background.svg" />
+    
+    <div class="header-apresentation content-padding">
+      <div class="header-content-text">
+        <h1>Titulo demonstrativo sobre a página</h1>
+        <span>Texto demonstrativo para explicar e dar mais informações do site</span>
+        <br />
+        <button>Demonstração</button>
+      </div>
+      <img src="./assets/apresentation.png" />
+    </div>
+  </header>
+  
+  <div class="container-brands">
+    <div class="box-brands">
+      <ul>
+        <li><img class="brands" src="./assets/Logo/AirLogo.png"/></li>
+        <li><img class="brands" src="./assets/Logo/AcmeLogo.png"/></li>
+        <li><img class="brands" src="./assets/Logo/DecoraLogo.png"/></li>
+        <li><img class="brands" src="./assets/Logo/VidereLogo.png"/></li>
+      </ul>
+    </div>
+  </div>
+
+  <section>
+    <div class="container-services content-margin-top content-padding">
+      <div class="image-services">
+        <img src="./assets/ilustration.png" />
+      </div>
+      <div class="information-services">
+        <div class="title-services">
+          <h1>100% Qualidade nos serviços e na entrega do produto</h1>
+          <span>Aqui se pode incluir um texto um pouco mais longo e descritivo, ou outro tipo de formatação da página</span>
+        </div>
+        <div class="wrap-checkbox">
+          <div class="check-service">
+            <div class="box-question">
+              <div class="checkbox">
+                <input type="checkbox" id="chk1" class="checkbox" name="chk">
+                <label for="chk1">
+                  <h3>Duvida comum</h3>
+                </label>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <p>Aqui vai um texto para responder a dúvida</p>
+          </div>
+          <div class="check-service">
+            <div class="box-question">
+              <div class="checkbox">
+                <input type="checkbox" id="chk2" class="checkbox" name="chk">
+                <label for="chk2">
+                  <h3>Duvida comum</h3>
+                </label>
+              </div>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <p>Aqui vai um texto para responder a dúvida</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-benefit content-padding">
+      <div class="information-benefit">
+        <h1>Um título para demonstrar benefícios</h1>
+        <span>
+          Aqui se pode incluir um texto um pouco mais longo e descritivo, ou outro tipo de formatação da página<br />
+          Aqui se pode incluir um texto um pouco mais longo e descritivo, ou outro tipo de formatação da página
+        </span>
+      </div>
+      <div class="image-benefit">
+        <div class="wrapper-image-benefit">
+          <div class="design-icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <div class="square">
+          </div>
+          <div class="btn-images">
+            <button><i class="fas fa-chevron-left"></i></button>
+            <button><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <img src="./assets/benefit1.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section-comments content-margin-top">
+    <div class="square-comments"></div>
+    <div class="comments content-padding ">
+      <img src="./assets/benefit3.png" />
+      <div class="information-comments">
+        <p>Outro texto por exemplo: comentários do que as pessoas estão falando sobre</p>
+        <a href="">Ler comentário completo <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-footer content-padding content-margin-top">
+      <div class="container-email">
+        <h2>Receber ofertas?</h2>
+        <div class="input-email">
+          <input type="email" placeholder="Email">
+          <button>Inscrever-se</button>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="container-list-social">
+          <div class="logo">
+            <i class="fas fa-video" aria-hidden="true"></i>
+          </div>
+          <p class="text-muted">Endereço da empresa vai aqui</p>
+          <ul class="list-socials">
+            <li><button class="btn-social"><i class="fab fa-google"></i></button></li>
+            <li><button class="btn-social"><i class="fab fa-twitter"></i></button></li>
+            <li><button class="btn-social"><i class="fab fa-instagram"></i></button></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <div class="">
+            <ul class="list-footer">
+              <li>Mais</li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <ul class="list-footer">
+              <li>Service</li>
+              <li><a href="#">Consultoria</a></li>
+              <li><a href="#">Casa</a></li>
+              <li><a href="#">Seleções</a></li>
+              <li><a href="#">Agentes</a></li>
+              <li><a href="#">Galeria</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <ul class="list-footer">
+              <li>Compania</li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Termos</a></li>
+              <li><a href="#">Políticas de privacidade</a></li>
+              <li><a href="#">Trabalhos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <hr />
+      <div class="terms">
+        <p>todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="./actions.js"></script>
+</body>
+</html>
